@@ -14,7 +14,7 @@
 ### cd mediapipe/examples/object_detection/raspberry_pi
 ### wget -q -O efficientdet.tflite -q https://storage.googleapis.com/mediapipe-models/object_detector/efficientdet_lite0/int8/1/efficientdet_lite0.tflite
 ### python detect.py
-# Далее распознавание жестов рук
+# Для распознавание жестов рук
 ### cd /home/rpi/mediapipe/examples/hand_landmarker/raspberry_pi
 ### nano setup.sh
 ### Там просто добавляем --break-system-packages 
