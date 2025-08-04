@@ -3,7 +3,6 @@
 Берем чистую microSD и записываем образ Raspberry PI OS Bookworm(64-bit)
 ## Далее в командной строке:
 ### sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
-### python3 -m pip install -r requirements.txt --break-system-packages
 ### pip install mediapipe --break-system-packages
 ### pip install opencv-python --break-system-packages
 ### sudo python -m pip install --upgrade pip --break-system-packages
@@ -17,5 +16,17 @@
 ### python detect.py
 # Далее распознавание жестов рук
 ### cd /home/rpi/mediapipe/examples/hand_landmarker/raspberry_pi
+### nano setup.sh
+### Там просто добавляем --break-system-packages 
+# Install Python dependencies.
+### python3 -m pip install pip --upgrade --break-system-packages 
+### python3 -m pip install -r requirements.txt --break-system-packages
+
+### wget -q https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_la>
+### Запускаем
 ### sh setup.sh
+## Далее создаем файл test.py:
+### touch test.py
+### nano test.py и вставляем код
+### или вместо всего этого просто клонируем из репозитория
 # Далее запускаем test.py
